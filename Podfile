@@ -6,6 +6,6 @@ target 'CoinList' do
   use_frameworks!
 
   # Pods for CoinList
-#pod 'SDWebImage'
+pod 'SDWebImage'
 
 end
