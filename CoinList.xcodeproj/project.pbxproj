@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D79BE19640B92742862EB47 /* Pods_CoinList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F2EB34786AFEC94030FA40 /* Pods_CoinList.framework */; };
+		3FD7483796DE086E6B2EF454 /* Pods_CoinList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ACD961294E3A34C568909B /* Pods_CoinList.framework */; };
 		62220F1228D713BC00136D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62220F1128D713BC00136D6C /* AppDelegate.swift */; };
 		62220F1928D713BC00136D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62220F1728D713BC00136D6C /* Main.storyboard */; };
 		62220F1B28D713BE00136D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62220F1A28D713BE00136D6C /* Assets.xcassets */; };
@@ -24,8 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06DBD16A2B6E148BE5B45BD2 /* Pods-CoinList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinList.release.xcconfig"; path = "Target Support Files/Pods-CoinList/Pods-CoinList.release.xcconfig"; sourceTree = "<group>"; };
-		59F2EB34786AFEC94030FA40 /* Pods_CoinList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62220F0E28D713BC00136D6C /* CoinList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62220F1128D713BC00136D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62220F1828D713BC00136D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,7 +39,9 @@
 		62220F3528D866D200136D6C /* PercentageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageView.swift; sourceTree = "<group>"; };
 		62220F3628D866D200136D6C /* PercentageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PercentageView.xib; sourceTree = "<group>"; };
 		62220F3928D8724000136D6C /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
-		DA0912C6C5476DE2260ED08A /* Pods-CoinList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinList.debug.xcconfig"; path = "Target Support Files/Pods-CoinList/Pods-CoinList.debug.xcconfig"; sourceTree = "<group>"; };
+		76C140DDF3C9FF0DFE2D7DB8 /* Pods-CoinList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinList.debug.xcconfig"; path = "Target Support Files/Pods-CoinList/Pods-CoinList.debug.xcconfig"; sourceTree = "<group>"; };
+		79FA0AA78EC8A2E25FB8CF0F /* Pods-CoinList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinList.release.xcconfig"; path = "Target Support Files/Pods-CoinList/Pods-CoinList.release.xcconfig"; sourceTree = "<group>"; };
+		A2ACD961294E3A34C568909B /* Pods_CoinList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D79BE19640B92742862EB47 /* Pods_CoinList.framework in Frameworks */,
+				3FD7483796DE086E6B2EF454 /* Pods_CoinList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 				62220F1028D713BC00136D6C /* CoinList */,
 				62220F0F28D713BC00136D6C /* Products */,
 				ED714099999A605D69BC78F6 /* Pods */,
-				8B7208BDFDE8C0BAA095873A /* Frameworks */,
+				F096CA10F70C4102E0E582E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,21 +103,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8B7208BDFDE8C0BAA095873A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				59F2EB34786AFEC94030FA40 /* Pods_CoinList.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		ED714099999A605D69BC78F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DA0912C6C5476DE2260ED08A /* Pods-CoinList.debug.xcconfig */,
-				06DBD16A2B6E148BE5B45BD2 /* Pods-CoinList.release.xcconfig */,
+				76C140DDF3C9FF0DFE2D7DB8 /* Pods-CoinList.debug.xcconfig */,
+				79FA0AA78EC8A2E25FB8CF0F /* Pods-CoinList.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F096CA10F70C4102E0E582E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2ACD961294E3A34C568909B /* Pods_CoinList.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,19 +127,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62220F2228D713BE00136D6C /* Build configuration list for PBXNativeTarget "CoinList" */;
 			buildPhases = (
-				E61C71E31F44C69ED2827BB8 /* [CP] Check Pods Manifest.lock */,
+				81C8B8C24D55FD6EE3880BB8 /* [CP] Check Pods Manifest.lock */,
 				62220F0A28D713BC00136D6C /* Sources */,
 				62220F0B28D713BC00136D6C /* Frameworks */,
 				62220F0C28D713BC00136D6C /* Resources */,
-				4F0235A558D68775A5EC039D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CoinList;
-			packageProductDependencies = (
-			);
 			productName = CoinList;
 			productReference = 62220F0E28D713BC00136D6C /* CoinList.app */;
 			productType = "com.apple.product-type.application";
@@ -168,8 +165,6 @@
 				Base,
 			);
 			mainGroup = 62220F0528D713BC00136D6C;
-			packageReferences = (
-			);
 			productRefGroup = 62220F0F28D713BC00136D6C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,24 +189,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4F0235A558D68775A5EC039D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CoinList/Pods-CoinList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CoinList/Pods-CoinList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinList/Pods-CoinList-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E61C71E31F44C69ED2827BB8 /* [CP] Check Pods Manifest.lock */ = {
+		81C8B8C24D55FD6EE3880BB8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -390,12 +368,13 @@
 		};
 		62220F2328D713BE00136D6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA0912C6C5476DE2260ED08A /* Pods-CoinList.debug.xcconfig */;
+			baseConfigurationReference = 76C140DDF3C9FF0DFE2D7DB8 /* Pods-CoinList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NT76U56Y8P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoinList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -419,12 +398,13 @@
 		};
 		62220F2428D713BE00136D6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06DBD16A2B6E148BE5B45BD2 /* Pods-CoinList.release.xcconfig */;
+			baseConfigurationReference = 79FA0AA78EC8A2E25FB8CF0F /* Pods-CoinList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NT76U56Y8P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoinList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
