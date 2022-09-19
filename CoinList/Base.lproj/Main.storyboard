@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E1B-Fs-oyJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Dbu-Dc-UIb">
+            <objects>
+                <viewController id="E1B-Fs-oyJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WCS-ee-9EO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eaI-4g-bmo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRF-gp-ViW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="103"/>
+        </scene>
+        <!--Coin List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CoinListViewController" id="BYZ-38-t0r" customClass="CoinListViewController" customModule="CoinList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWu-N7-ChU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Coin List" id="YZl-nI-ax8">
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="magnifyingglass" catalog="system" id="JHT-xM-KWh"/>
+                                            <barButtonItem title="USD" id="bN3-QA-Htb"/>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-DD-Ogq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoinTableViewCell" rowHeight="51" id="KbC-Mu-YzC" customClass="CoinTableViewCell" customModule="CoinList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="51"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KbC-Mu-YzC" id="q0Z-Ds-KJ6">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0e-4V-rd3">
+                                                    <rect key="frame" x="16" y="0.0" width="382" height="51"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g2g-mV-sop">
+                                                            <rect key="frame" x="0.0" y="13.5" width="24" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="24" id="KrN-Nk-4z0"/>
+                                                                <constraint firstAttribute="height" constant="24" id="ajj-u1-y6U"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdr-np-naS">
+                                                            <rect key="frame" x="34" y="0.0" width="0.0" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="lYS-5p-cCR"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WC9-g3-Abb" customClass="PaddingLabel" customModule="CoinList" customModuleProvider="target">
+                                                            <rect key="frame" x="34" y="32.5" width="16" height="13.5"/>
+                                                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="13.5" id="Fia-tC-r8n"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                                    <real key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                                    <real key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <integer key="value" value="4"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ls1-zm-VMB">
+                                                            <rect key="frame" x="52" y="31.5" width="24.5" height="14.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="24.5" id="yr2-wY-6Hb"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$43,792.39" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bw-Y5-76P">
+                                                            <rect key="frame" x="275" y="17" width="107" height="17"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79" id="dxd-dC-KmJ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ET0-Jo-nM0" customClass="PercentageView" customModule="CoinList" customModuleProvider="target">
+                                                            <rect key="frame" x="185" y="10.5" width="90" height="30"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="90" id="cFk-3A-CYS"/>
+                                                                <constraint firstAttribute="height" constant="30" id="hKr-H9-YiG"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="2Bw-Y5-76P" firstAttribute="leading" secondItem="ET0-Jo-nM0" secondAttribute="trailing" id="5ZG-Cl-hd8"/>
+                                                        <constraint firstItem="WC9-g3-Abb" firstAttribute="leading" secondItem="Jdr-np-naS" secondAttribute="leading" id="Aad-Iy-gbQ"/>
+                                                        <constraint firstItem="g2g-mV-sop" firstAttribute="leading" secondItem="S0e-4V-rd3" secondAttribute="leading" id="EYv-lF-NXh"/>
+                                                        <constraint firstItem="Ls1-zm-VMB" firstAttribute="leading" secondItem="WC9-g3-Abb" secondAttribute="trailing" constant="2" id="QJo-3U-qkJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Ls1-zm-VMB" secondAttribute="bottom" constant="5" id="RPA-6z-zcG"/>
+                                                        <constraint firstItem="Jdr-np-naS" firstAttribute="top" secondItem="S0e-4V-rd3" secondAttribute="top" id="WOg-sz-OHv"/>
+                                                        <constraint firstItem="ET0-Jo-nM0" firstAttribute="centerY" secondItem="S0e-4V-rd3" secondAttribute="centerY" id="XkE-pT-uqK"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2Bw-Y5-76P" secondAttribute="trailing" id="Yg2-eb-Snx"/>
+                                                        <constraint firstItem="ET0-Jo-nM0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jdr-np-naS" secondAttribute="trailing" constant="8" symbolic="YES" id="ZwI-A5-lMh"/>
+                                                        <constraint firstItem="2Bw-Y5-76P" firstAttribute="centerY" secondItem="S0e-4V-rd3" secondAttribute="centerY" id="bvU-qD-SPG"/>
+                                                        <constraint firstItem="Jdr-np-naS" firstAttribute="leading" secondItem="g2g-mV-sop" secondAttribute="trailing" constant="10" id="pk0-e2-qnZ"/>
+                                                        <constraint firstItem="g2g-mV-sop" firstAttribute="centerY" secondItem="S0e-4V-rd3" secondAttribute="centerY" id="tBL-vL-Qam"/>
+                                                        <constraint firstItem="ET0-Jo-nM0" firstAttribute="centerX" secondItem="S0e-4V-rd3" secondAttribute="centerX" multiplier="1.2" constant="1" id="vhZ-Gm-zST"/>
+                                                        <constraint firstAttribute="bottom" secondItem="WC9-g3-Abb" secondAttribute="bottom" constant="5" id="yZg-Nz-Dkd"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="S0e-4V-rd3" firstAttribute="leading" secondItem="q0Z-Ds-KJ6" secondAttribute="leading" constant="16" id="29W-Ua-91a"/>
+                                                <constraint firstAttribute="trailing" secondItem="S0e-4V-rd3" secondAttribute="trailing" constant="16" id="m6l-xR-dOw"/>
+                                                <constraint firstItem="S0e-4V-rd3" firstAttribute="top" secondItem="q0Z-Ds-KJ6" secondAttribute="top" id="upQ-ej-HCn"/>
+                                                <constraint firstAttribute="bottom" secondItem="S0e-4V-rd3" secondAttribute="bottom" id="uuA-3p-gEm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="coinIconImageView" destination="g2g-mV-sop" id="Mr2-gv-rwJ"/>
+                                            <outlet property="coinNameLabel" destination="Jdr-np-naS" id="yLK-Ze-QWk"/>
+                                            <outlet property="indexLabel" destination="WC9-g3-Abb" id="Wch-EV-JmY"/>
+                                            <outlet property="percentageView" destination="ET0-Jo-nM0" id="CAY-rb-PQj"/>
+                                            <outlet property="priceLabel" destination="2Bw-Y5-76P" id="rwm-VP-fJd"/>
+                                            <outlet property="tuLabel" destination="Ls1-zm-VMB" id="POB-aY-4Gj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="KFU-cP-0zq"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bZt-90-hl6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CMC-DD-Ogq" secondAttribute="trailing" id="48J-RT-wTn"/>
+                            <constraint firstItem="CMC-DD-Ogq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7E8-Kc-m2q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CMC-DD-Ogq" secondAttribute="bottom" id="Bcw-VT-nTk"/>
+                            <constraint firstItem="iWu-N7-ChU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mal-Js-8BL"/>
+                            <constraint firstItem="iWu-N7-ChU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SGU-lN-cLi"/>
+                            <constraint firstItem="iWu-N7-ChU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="i5T-pj-7yX"/>
+                            <constraint firstItem="CMC-DD-Ogq" firstAttribute="top" secondItem="iWu-N7-ChU" secondAttribute="bottom" id="pNv-sN-fiN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="CMC-DD-Ogq" id="EFl-Bc-Rjj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="WC9-g3-Abb">
+            <size key="intrinsicContentSize" width="16" height="17.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
